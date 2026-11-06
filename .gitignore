@@ -1,7 +1,0 @@
-__pycache__/
-*.py[cod]
-.venv/
-.supplydesk/
-*.egg-info/
-.coverage
-htmlcov/
