@@ -1,0 +1,32 @@
+[
+  {
+    "product_id": "notebook",
+    "name": "Notebook",
+    "unit_price_cents": 500,
+    "stock": 20
+  },
+  {
+    "product_id": "pen-pack",
+    "name": "Pen pack",
+    "unit_price_cents": 750,
+    "stock": 10
+  },
+  {
+    "product_id": "hoodie",
+    "name": "Campus hoodie",
+    "unit_price_cents": 4000,
+    "stock": 5
+  },
+  {
+    "product_id": "mug",
+    "name": "Campus mug",
+    "unit_price_cents": 1500,
+    "stock": 8
+  },
+  {
+    "product_id": "bag",
+    "name": "Canvas bag",
+    "unit_price_cents": 2500,
+    "stock": 4
+  }
+]
