@@ -51,6 +51,8 @@ class OrderService:
     def cancel_order(self, order_id):
         state = self.store.load()
         order = self._find_order(state, order_id)
+        if order["status"] == "cancelled":
+            return order
         self._adjust_stock(state["catalog"], order["items"], +1)
         order["status"] = "cancelled"
         self.store.save(state)
