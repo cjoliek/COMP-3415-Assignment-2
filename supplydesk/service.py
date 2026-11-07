@@ -60,6 +60,7 @@ class OrderService:
     def _build_quote(self, state, customer_type, items, fulfillment):
         self._validate_request_shape(customer_type, items,fulfillment)
         lines = [self._build_line(state["catalog"], item) for item in items]
+        self._check_combined_stock(state["catalog"], lines)
         subtotal = sum(line["line_total_cents"] for line in lines)
         discount = self._student_discount(customer_type, subtotal)
         delivery = self._delivery_charge(fulfillment, subtotal - discount)
@@ -103,6 +104,16 @@ class OrderService:
             "line_total_cents": product["unit_price_cents"] * quantity,   
         }
 
+
+    def _check_combined_stock(self, catalog, lines):
+        requested = {}
+        for line in lines:
+            requested[line["product_id"]] = requested.get(line["product_id"], 0) + line["quantity"]
+        for product_id, quantity in requested.items():
+            if quantity > self._find_product(catalog, product_id)["stock"]:
+                raise ValueError("Not enough stock for " + product_id + ".")
+
+            
     @staticmethod
     def _student_discount(customer_type, subtotal):
         if customer_type == "student" and subtotal >= STUDENT_DISCOUNT_THRESHOLD_CENTS:
