@@ -1,0 +1,83 @@
+test_non_integer_quantity_rejected_by_parser (test_interfaces.CommandLineTests.test_non_integer_quantity_rejected_by_parser) ... ok
+test_place_show_cancel_round_trip (test_interfaces.CommandLineTests.test_place_show_cancel_round_trip) ... ok
+test_quote_uses_defaults_and_prints_json_cents (test_interfaces.CommandLineTests.test_quote_uses_defaults_and_prints_json_cents) ... ok
+test_rejected_service_request_exits_2 (test_interfaces.CommandLineTests.test_rejected_service_request_exits_2) ... ok
+test_show_unknown_order_exits_2 (test_interfaces.CommandLineTests.test_show_unknown_order_exits_2) ... ok
+test_unknown_customer_rejected_by_parser (test_interfaces.CommandLineTests.test_unknown_customer_rejected_by_parser) ... ok
+test_bad_quantity_text_asks_again (test_interfaces.MenuTest.test_bad_quantity_text_asks_again) ... ok
+test_confirming_placement_saves_orders (test_interfaces.MenuTest.test_confirming_placement_saves_orders) ... ok
+test_declining_cancellation_keeps_order (test_interfaces.MenuTest.test_declining_cancellation_keeps_order) ... ok
+test_declining_placement_leaves_no_saved_data (test_interfaces.MenuTest.test_declining_placement_leaves_no_saved_data) ... ok
+test_end_of_input_exits_cleanly (test_interfaces.MenuTest.test_end_of_input_exits_cleanly) ... ok
+test_invalid_request_reports_error_and_returns_to_menu (test_interfaces.MenuTest.test_invalid_request_reports_error_and_returns_to_menu) ... ok
+test_money_formats_cents_as_dollars (test_interfaces.MenuTest.test_money_formats_cents_as_dollars) ... ok
+test_readme_first_quote_shows_ten_dollars (test_interfaces.MenuTest.test_readme_first_quote_shows_ten_dollars) ... ok
+test_combined_duplicate_lines_may_not_exceed_stock (test_service.BoundaryBehaviourTests.test_combined_duplicate_lines_may_not_exceed_stock) ... FAIL
+test_delivery_free_at_exactly_10000_after_discount (test_service.BoundaryBehaviourTests.test_delivery_free_at_exactly_10000_after_discount) ... ok
+test_delivery_threshold_uses_discounted_amount (test_service.BoundaryBehaviourTests.test_delivery_threshold_uses_discounted_amount) ... ok
+test_discount_rounds_half_cent_upward (test_service.BoundaryBehaviourTests.test_discount_rounds_half_cent_upward) ... ok
+test_duplicate_lines_within_stock_remain_separate (test_service.BoundaryBehaviourTests.test_duplicate_lines_within_stock_remain_separate) ... ok
+test_one_more_than_stock_is_rejected (test_service.BoundaryBehaviourTests.test_one_more_than_stock_is_rejected) ... ok
+test_ordering_exactly_all_stock_is_allowed (test_service.BoundaryBehaviourTests.test_ordering_exactly_all_stock_is_allowed) ... ok
+test_quantity_100_is_rejected_even_with_enough_stock (test_service.BoundaryBehaviourTests.test_quantity_100_is_rejected_even_with_enough_stock) ... ok
+test_quantity_99_is_accepted_when_stock_allows (test_service.BoundaryBehaviourTests.test_quantity_99_is_accepted_when_stock_allows) ... ok
+test_quantity_one_is_accepted (test_service.BoundaryBehaviourTests.test_quantity_one_is_accepted) ... ok
+test_quantity_zero_is_rejected (test_service.BoundaryBehaviourTests.test_quantity_zero_is_rejected) ... ok
+test_student_discount_at_exactly_5000_cents (test_service.BoundaryBehaviourTests.test_student_discount_at_exactly_5000_cents) ... FAIL
+test_student_just_below_discount_threshold (test_service.BoundaryBehaviourTests.test_student_just_below_discount_threshold) ... ok
+test_cancel_unknown_order_raises_without_saving (test_service.InvalidBehaviourTests.test_cancel_unknown_order_raises_without_saving) ... ok
+test_cancelling_twice_does_not_restore_stock_twice (test_service.InvalidBehaviourTests.test_cancelling_twice_does_not_restore_stock_twice) ... FAIL
+test_get_unknown_order_raises (test_service.InvalidBehaviourTests.test_get_unknown_order_raises) ... ok
+test_invalid_placement_leaves_saved_data_unchanged (test_service.InvalidBehaviourTests.test_invalid_placement_leaves_saved_data_unchanged) ... ok
+test_invalid_placement_on_new_file_creates_nothing (test_service.InvalidBehaviourTests.test_invalid_placement_on_new_file_creates_nothing) ... ok
+test_invalid_quotes_raise_value_error (test_service.InvalidBehaviourTests.test_invalid_quotes_raise_value_error) ... ok
+test_malformed_save_file_raises_instead_of_resetting (test_service.InvalidBehaviourTests.test_malformed_save_file_raises_instead_of_resetting) ... ok
+test_cancel_restores_stock_and_keeps_order_in_history (test_service.NormalBehaviourTests.test_cancel_restores_stock_and_keeps_order_in_history) ... ok
+test_new_save_file_starts_with_spec_catalog (test_service.NormalBehaviourTests.test_new_save_file_starts_with_spec_catalog) ... ok
+test_place_order_deducts_stock_and_saves (test_service.NormalBehaviourTests.test_place_order_deducts_stock_and_saves) ... ok
+test_quote_contains_all_required_fields (test_service.NormalBehaviourTests.test_quote_contains_all_required_fields) ... ok
+test_spec_example_regular_delivery_three_hoodies (test_service.NormalBehaviourTests.test_spec_example_regular_delivery_three_hoodies) ... ok
+test_student_discount_applies_above_threshold (test_service.NormalBehaviourTests.test_student_discount_applies_above_threshold) ... ok
+test_historical_prices_not_recalculated_after_catalog_change (test_service.PreservedBehaviourTests.test_historical_prices_not_recalculated_after_catalog_change) ... ok
+test_history_keeps_placement_order_including_cancelled (test_service.PreservedBehaviourTests.test_history_keeps_placement_order_including_cancelled) ... ok
+test_order_ids_are_sequential_and_never_reused (test_service.PreservedBehaviourTests.test_order_ids_are_sequential_and_never_reused) ... ok
+test_placed_order_matches_preceding_quote (test_service.PreservedBehaviourTests.test_placed_order_matches_preceding_quote) ... ok
+test_quote_does_not_create_file_or_change_stock (test_service.PreservedBehaviourTests.test_quote_does_not_create_file_or_change_stock) ... ok
+test_quote_rechecks_stock_after_placement (test_service.PreservedBehaviourTests.test_quote_rechecks_stock_after_placement) ... ok
+test_saved_file_uses_schema_version_1 (test_service.PreservedBehaviourTests.test_saved_file_uses_schema_version_1) ... ok
+test_cancel_order_restores_stock (test_smoke.OrderSmokeTests.test_cancel_order_restores_stock) ... ok
+test_order_can_be_reopened (test_smoke.OrderSmokeTests.test_order_can_be_reopened) ... ok
+test_regular_pickup_quote (test_smoke.OrderSmokeTests.test_regular_pickup_quote) ... ok
+test_student_delivery_quote (test_smoke.OrderSmokeTests.test_student_delivery_quote) ... ok
+
+======================================================================
+FAIL: test_combined_duplicate_lines_may_not_exceed_stock (test_service.BoundaryBehaviourTests.test_combined_duplicate_lines_may_not_exceed_stock)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\clara\OneDrive\Studium\Auslandssemester\Software engineering\COMP-3415-Assignment-2\tests\test_service.py", line 162, in test_combined_duplicate_lines_may_not_exceed_stock
+    with self.assertRaises (ValueError):
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_student_discount_at_exactly_5000_cents (test_service.BoundaryBehaviourTests.test_student_discount_at_exactly_5000_cents)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\clara\OneDrive\Studium\Auslandssemester\Software engineering\COMP-3415-Assignment-2\tests\test_service.py", line 134, in test_student_discount_at_exactly_5000_cents
+    self.assertEqual (quote ["discount_cents"], 500)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 500
+
+======================================================================
+FAIL: test_cancelling_twice_does_not_restore_stock_twice (test_service.InvalidBehaviourTests.test_cancelling_twice_does_not_restore_stock_twice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\clara\OneDrive\Studium\Auslandssemester\Software engineering\COMP-3415-Assignment-2\tests\test_service.py", line 236, in test_cancelling_twice_does_not_restore_stock_twice
+    self.assertEqual (self.stock_of ("bag"), 4)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 6 != 4
+
+----------------------------------------------------------------------
+Ran 51 tests in 0.384s
+
+FAILED (failures=3)
