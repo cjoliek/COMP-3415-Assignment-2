@@ -105,7 +105,7 @@ class OrderService:
 
     @staticmethod
     def _student_discount(customer_type, subtotal):
-        if customer_type == "student" and subtotal > STUDENT_DISCOUNT_THRESHOLD_CENTS:
+        if customer_type == "student" and subtotal >= STUDENT_DISCOUNT_THRESHOLD_CENTS:
             return (subtotal * STUDENT_DISCOUNT_PERCENT + 50) // 100
         return 0
 
